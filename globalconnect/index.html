@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><title>Copenhagen Quantum · protected page</title>
+<style>
+:root{--bg:#0f1720;--card:#16212d;--ink:#e6edf3;--muted:#9fb0c0;--acc:#4fb3d9;--err:#ff8a80}
+@media (prefers-color-scheme: light){:root{--bg:#f4f6f8;--card:#fff;--ink:#14202b;--muted:#5b6b7a;--acc:#1f7fa8;--err:#c62828}}
+html,body{margin:0;height:100%;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+.wrap{min-height:100%;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+form{background:var(--card);padding:28px;border-radius:12px;width:100%;max-width:360px;box-shadow:0 4px 24px rgba(0,0,0,.25)}
+h1{font-size:17px;margin:0 0 6px}p{margin:0 0 16px;color:var(--muted);font-size:13px}
+input{width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid var(--muted);background:transparent;color:var(--ink);font-size:15px}
+button{margin-top:12px;width:100%;padding:10px;border:0;border-radius:8px;background:var(--acc);color:#fff;font-size:15px;cursor:pointer}
+.err{color:var(--err);font-size:13px;min-height:18px;margin-top:8px}
+</style></head><body><div class="wrap"><form id="f" autocomplete="off">
+<h1>Copenhagen Quantum</h1><p>This page is protected. Enter the password you received.</p>
+<input id="pw" type="password" aria-label="Password" autofocus><button type="submit">Open</button><div class="err" id="e"></div>
+</form></div>
+<script>
+(()=>{
+const D={s:"G/NEOpdngKT4LNoOmjaaXw==",i:"MgTuA3RtRjTmCYky",n:600000,c:"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"};
+const u=(s)=>Uint8Array.from(atob(s),ch=>ch.charCodeAt(0));
+async function openPage(pw){
+  const base=await crypto.subtle.importKey("raw",new TextEncoder().encode(pw),"PBKDF2",false,["deriveKey"]);
+  const key=await crypto.subtle.deriveKey({name:"PBKDF2",salt:u(D.s),iterations:D.n,hash:"SHA-256"},base,{name:"AES-GCM",length:256},false,["decrypt"]);
+  const pt=await crypto.subtle.decrypt({name:"AES-GCM",iv:u(D.i)},key,u(D.c));
+  try{sessionStorage.setItem("coqu_share_pw",pw)}catch(x){}
+  const html=new TextDecoder().decode(pt);
+  document.open();document.write(html);document.close();
+}
+document.getElementById("f").addEventListener("submit",async(ev)=>{ev.preventDefault();
+  const e=document.getElementById("e");e.textContent="Opening…";
+  try{await openPage(document.getElementById("pw").value)}catch(x){e.textContent="Wrong password."}});
+(async()=>{let p=null;try{p=sessionStorage.getItem("coqu_share_pw")}catch(x){}
+  if(p){try{await openPage(p)}catch(x){try{sessionStorage.removeItem("coqu_share_pw")}catch(y){}}}})();
+})();
+</script></body></html>
